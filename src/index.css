@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 43 21% 96%;
+    --foreground: 101 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 101 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 101 15% 15%;
+
+    --primary: 101 20% 33%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 43 22% 90%;
+    --secondary-foreground: 101 20% 25%;
+
+    --muted: 43 15% 92%;
+    --muted-foreground: 101 10% 45%;
+
+    --accent: 35 38% 64%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 43 15% 85%;
+    --input: 43 15% 85%;
+    --ring: 101 20% 33%;
+
+    --radius: 0.75rem;
+
+    --nav-bg: 43 21% 96%;
+    --nav-foreground: 101 15% 15%;
+    --hero-overlay: 101 15% 15%;
+    --section-alt: 43 15% 93%;
+    --gold: 35 38% 64%;
+    --gold-light: 35 38% 92%;
+
+    --sidebar-background: 43 21% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 101 20% 33%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 43 22% 92%;
+    --sidebar-accent-foreground: 101 20% 25%;
+    --sidebar-border: 43 15% 88%;
+    --sidebar-ring: 101 20% 33%;
+    --accent-1: #C5A880;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .btn-appointment {
+    @apply inline-flex items-center justify-center bg-primary text-primary-foreground px-6 py-2.5 border-2 border-transparent rounded font-semibold uppercase text-sm tracking-wider hover:opacity-90 transition-opacity;
+  }
+  .btn-appointment-outline {
+    @apply inline-flex items-center justify-center border-2 border-primary-foreground text-primary-foreground px-6 py-2.5 rounded font-semibold uppercase text-sm tracking-wider hover:bg-primary-foreground hover:text-primary transition-colors;
+  }
+  .section-title {
+    @apply text-2xl md:text-3xl font-heading font-bold text-foreground;
+  }
+  .nav-link {
+    @apply text-nav-foreground uppercase text-sm font-semibold tracking-wider px-4 py-4 hover:bg-primary/80 transition-colors;
+  }
+}
+
+@keyframes slide {
+  0%, 30% { opacity: 1; }
+  33%, 97% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
