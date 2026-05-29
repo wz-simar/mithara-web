@@ -11,7 +11,7 @@ interface AppointmentPopupProps {
 
 const AppointmentPopup = ({ children, className, onClick }: AppointmentPopupProps) => {
   const [agreed, setAgreed] = useState(false);
-  const appointmentLink = "https://app.wellnessz.in/public/book-appointment/69562a4202438fe6c61177db";
+  const appointmentLink = "https://app.wellnessz.in/public/book-appointment/68ff4a1eb65e5163a92e4d54";
 
   return (
     <Dialog onOpenChange={(open) => { if (!open) setAgreed(false); }}>
