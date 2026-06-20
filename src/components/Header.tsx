@@ -13,7 +13,7 @@ const Header = () => {
         {/* Left Side Tagline */}
         <div className="flex items-center gap-1.5 font-medium tracking-wide">
           <span className="inline-block w-1.5 h-1.5 rounded-full bg-primary/60"></span>
-          <span>Rooted in Ayurveda. Backed by Science. Focused on You.</span>
+          <span>Backed by Science. Focused on You.</span>
         </div>
 
         {/* Right Side Contact & Socials */}

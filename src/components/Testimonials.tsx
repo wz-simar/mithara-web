@@ -7,6 +7,7 @@ import testimonial2 from "@/assets/testimonial2.jpg";
 import testimonial3 from "@/assets/testimonial3.jpg";
 import testimonial4 from "@/assets/testimonial4.jpg";
 import testimonial5 from "@/assets/testimonial5.jpg";
+import testimonial6 from "@/assets/testimonial6.jpeg";
 
 const testimonials = [
   {
@@ -33,6 +34,11 @@ const testimonials = [
     name: "Jeeta Nair (School Teacher at DPS Public School, Bahrain)",
     text: "Hi! I wanted to share my experience with Smitha Menon — I’ve seen noticeable weight reduction, my inflammation has reduced significantly, and my diabetes is much better under control now. I also feel much better overall, with real relief from bloatedness and constipation. It’s made a big difference in how I feel day to day. Thank you, Smitha!",
     image: testimonial5,
+  },
+  {
+    name: "Nirmal Jayprakash (General Manager - Sales Nippon Motor Corporation (P) Ltd)",
+    text: "I approached Smitha looking for a practical way to lose weight, and I couldn’t be happier with the results. In just 2 months, I lost 6.3 kg with a simple plan built around home-cooked food. No gym memberships, no extreme routines, no starving. Just real meals that fit my daily life.The changes went beyond the scale. I dropped from overweight to normal BMI, lost 9 cm off my waist, and felt my energy come back. My uric acid came down from 8.4 to 6.9, and my *fasting insulin improved dramatically from 25.3 to 7.6.Most importantly, it was sustainable. I never felt deprived, and for the first time, eating healthy felt easy.I highly recommend Smitha Menon to anyone who wants real, lasting results without the gimmicks. She changed how I eat, and how I feel.",
+    image: testimonial6,
   },
 ];
 const Testimonials = () => {
@@ -80,7 +86,7 @@ const Testimonials = () => {
     <section className="py-16 bg-background">
       <div className="container mx-auto px-4">
         <AnimatedSection>
-          <h2 className="section-title text-center mb-12">What Our Patients Say</h2>
+          <h2 className="section-title text-center mb-12">Lives We Have Touched</h2>
         </AnimatedSection>
 
         <div className="relative max-w-6xl mx-auto">

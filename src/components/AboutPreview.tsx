@@ -63,17 +63,26 @@ const AboutPreview = () => {
               {/* Overlapping Quote Box (Bottom-Right) */}
               <motion.div
                 whileHover={{ y: -4 }}
-                className="absolute -bottom-6 -right-4 md:-right-6 bg-gold-light/95 backdrop-blur-sm p-6 rounded-2xl border border-gold/20 shadow-xl max-w-[260px] text-left"
+                className="absolute -bottom-4 -right-2 md:-right-4 
+                bg-gold-light/90 backdrop-blur-md 
+                p-2 rounded-xl 
+                border border-gold/20 
+                shadow-md 
+                max-w-[200px] text-left"
               >
-                <Quote className="w-8 h-8 text-gold opacity-45 mb-2" />
-                <p className="font-heading italic text-foreground text-sm leading-relaxed font-semibold">
+                <Quote className="w-4 h-4 text-gold opacity-40 mb-2" />
+
+                <p className="font-heading italic text-foreground text-xs leading-snug font-semibold">
                   "Good nutrition is not about restriction, it's about balance."
                 </p>
-                <div className="flex items-center gap-2 mt-3">
-                  <span className="h-[1px] w-4 bg-primary/45"></span>
-                  <span className="text-[10px] font-body uppercase tracking-wider text-primary font-bold">Mithahara Clinic</span>
-                </div>
-              </motion.div>
+
+                 <div className="flex items-center gap-2 mt-2">
+                   <span className="h-[1px] w-3 bg-primary/40"></span>
+                   <span className="text-[9px] font-body uppercase tracking-wider text-primary font-bold">
+                     Mithahara Clinic
+                   </span>
+                 </div>
+               </motion.div>
 
             </div>
           </AnimatedSection>

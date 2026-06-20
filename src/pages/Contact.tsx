@@ -115,7 +115,7 @@ const Contact = () => {
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title="Mithara Clinic Location Map"
+          title="Mithahara Clinic Location Map"
         />
       </section>
 
