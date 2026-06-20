@@ -22,7 +22,7 @@ const Terms = () => {
             <h1 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">MASTER WEBSITE, MOBILE APPLICATION & EULA AGREEMENT</h1>
 
             <div className="border-l-4 border-primary pl-4 mb-8">
-              <p className="text-muted-foreground font-body font-semibold">Mithara Nutrition & Wellness | www.mithahara.com | Kochi, Kerala</p>
+              <p className="text-muted-foreground font-body font-semibold">Mithahara Nutrition & Wellness | www.mithahara.com | Kochi, Kerala</p>
               <p className="text-muted-foreground font-body font-medium">Last Updated: 01-04-2026</p>
             </div>
 

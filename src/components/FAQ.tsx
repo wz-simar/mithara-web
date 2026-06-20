@@ -13,11 +13,11 @@ const faqs = [
     a: "Smitha holds an M.Sc. FRM (St. Teresa's College, Ernakulam), an Advanced Certification in Functional Medicine Clinical Nutrition (accredited by IAFM), a Post Graduate Diploma in Clinical Nutrition (Amity University), and is a Certified Diabetes Educator (NDEP) with UNICEF and Cornell University certifications." 
   },
   { 
-    q: "What is the primary approach and philosophy of Mithara?", 
-    a: "Mithara operates on a root-cause and preventive approach. Rather than addressing symptoms with temporary fix diets, we decode your metabolic markers, medical history, and lifestyle to create practical, sustainable, and scientifically backed nutrition choices." 
+    q: "What is the primary approach and philosophy of Mithahara?", 
+    a: "Mithahara operates on a root-cause and preventive approach. Rather than addressing symptoms with temporary fix diets, we decode your metabolic markers, medical history, and lifestyle to create practical, sustainable, and scientifically backed nutrition choices." 
   },
   { 
-    q: "What are the primary areas of expertise under Mithara?", 
+    q: "What are the primary areas of expertise under Mithahara?", 
     a: "We provide specialized nutrition planning for Weight Management, Diabetes, PCOS & Hormonal Health, Lipid Management, Thyroid Disorders, and Gut Health & Lifestyle Disorders." 
   },
   { 

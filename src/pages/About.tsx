@@ -16,7 +16,7 @@ const stats = [
 ];
 
 const qualifications = [
-  "M.Sc. in Family Resource Management",
+  "M.Sc. in Family Resource Management, St. Teresa’s College, Kochi",
   "Advanced Certification in Functional Medicine Clinical Nutrition (Accredited by IAFM - Indian Association of Functional Medicine)",
   "Post Graduate Diploma in Clinical Nutrition (Amity University, Noida)",
   "Certification in PCOS Nutrition",
@@ -31,7 +31,8 @@ const expertise = [
   "Gut health and lifestyle disorder support",
   "Body Composition Analysis for individuals and organizations",
   "Corporate and school-based nutrition awareness programs",
-  "Health education through video content and workshops"
+  "Health education through video content and workshops",
+  "Lipid Management"
 ];
 
 const memberships = [

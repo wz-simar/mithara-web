@@ -14,9 +14,9 @@ const Footer = () => {
           
           {/* Brand Intro Column */}
           <div className="text-left">
-            <h3 className="font-heading text-xl font-bold text-background mb-4">Mithara</h3>
+            <h3 className="font-heading text-xl font-bold text-background mb-4">Mithahara</h3>
             <p className="font-body text-xs leading-relaxed text-background/70">
-              Mithara is a clinical wellness space founded by Smitha Menon, a Clinical, Functional & Preventive Nutritionist. We specialize in evidence-based, personalized nutrition care to address root causes of metabolic, gut, and hormonal health concerns.
+              Mithahara is a clinical wellness space founded by Smitha Menon, a Clinical, Functional & Preventive Nutritionist. We specialize in evidence-based, personalized nutrition care to address root causes of metabolic, gut, and hormonal health concerns.
             </p>
           </div>
 
@@ -57,7 +57,7 @@ const Footer = () => {
                 className="flex items-center gap-3 hover:text-gold transition-colors cursor-pointer"
               >
                 <Mail className="w-4 h-4 text-gold flex-shrink-0" />
-                <span>info@mithahara.com</span>
+                <span>smitha.menon@mithahara.in</span>
               </a>
               <a 
                 href="https://maps.google.com/?q=G%20182,%201st%20Floor,%203rd%20Cross%20Road,%20Panampilli%20Nagar,%20Kochi%20682036" 
@@ -96,7 +96,7 @@ const Footer = () => {
       {/* Copyright Bar */}
       <div className="border-t border-background/10 bg-black/10">
         <div className="container mx-auto px-4 py-5 text-center font-body text-[10px] uppercase tracking-widest text-background/45">
-          © 2026 Mithara Nutrition & Wellness. All rights reserved.
+          © 2026 Mithahara Nutrition & Wellness. All rights reserved.
         </div>
       </div>
 

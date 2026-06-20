@@ -8,11 +8,11 @@ const features = [
     title: "Personalised Nutrition Plans",
     description: "Tailored to your body, goals & lifestyle",
   },
-  {
-    icon: Leaf,
-    title: "Rooted in Ayurveda",
-    description: "Holistic approach for long-term wellness",
-  },
+  // {
+  //   icon: Leaf,
+  //   title: "Rooted in Ayurveda",
+  //   description: "Holistic approach for long-term wellness",
+  // },
   {
     icon: FlaskConical,
     title: "Science-Backed",
@@ -29,7 +29,7 @@ const FeaturesBar = () => {
   return (
     <section className="bg-secondary/40 border-b border-border/20 py-8 md:py-10">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 divide-y sm:divide-y-0 lg:divide-x divide-border/60">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 divide-y sm:divide-y-0 lg:divide-x divide-border/60">
           {features.map((feat, i) => (
             <AnimatedSection key={feat.title} delay={i * 0.1}>
               <motion.div 

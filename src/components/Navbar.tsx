@@ -23,9 +23,9 @@ const Navbar = () => {
         
         {/* Elegant Brand Logo */}
         <Link to="/" className="flex items-center gap-3 group">
-          <img src={logo} alt="Mithara logo" className="w-10 h-10 object-contain group-hover:scale-105 transition-transform" />
+          <img src={logo} alt="Mithahara logo" className="w-10 h-10 object-contain group-hover:scale-105 transition-transform" />
           <div className="flex flex-col">
-            <span className="font-heading text-2xl font-bold tracking-tight text-foreground leading-none">Mithara</span>
+            <span className="font-heading text-2xl font-bold tracking-tight text-foreground leading-none">Mithahara</span>
             <span className="font-body text-[8px] font-semibold tracking-[0.25em] text-primary uppercase mt-1">Nutrition & Wellness</span>
           </div>
         </Link>

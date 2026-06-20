@@ -93,7 +93,7 @@ const Hero = () => {
             <div className="relative w-[300px] h-[300px] md:w-[420px] md:h-[420px] lg:w-[440px] lg:h-[440px] rounded-full overflow-hidden shadow-2xl border-4 border-white/60">
               <img
                 src={heroImg}
-                alt="Healthy salad bowl styled by Mithara"
+                alt="Healthy salad bowl styled by Mithahara"
                 className="w-full h-full object-cover select-none"
               />
             </div>
