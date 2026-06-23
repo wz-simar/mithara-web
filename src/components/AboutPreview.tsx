@@ -20,7 +20,7 @@ const AboutPreview = () => {
             </h2>
             <div className="space-y-4 text-muted-foreground font-body text-base leading-relaxed mb-8">
               <p>
-                I'm <strong className="text-foreground">Smitha Menon</strong>, a Clinical, Functional & Preventive Nutritionist based in Kochi. I run my clinic, <strong className="text-foreground">MITHAHARA</strong>, dedicated to helping individuals achieve better health through evidence-based, personalized nutrition.
+                I'm <strong className="text-foreground">Smitha Menon</strong>, a Clinical, Functional & Preventive Nutritionist based in Kochi. She runs her diet clinic, <strong className="text-foreground">MITHAHARA</strong>, dedicated to helping individuals achieve better health through evidence-based, personalized nutrition.
               </p>
               <p>
                 With a strong academic foundation and specialized certifications, I bring a holistic and functional approach to nutrition care — addressing root causes rather than just symptoms.

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { ChevronLeft, ChevronRight, Star, Quote } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import AnimatedSection from "@/components/AnimatedSection";
@@ -8,6 +8,7 @@ import testimonial3 from "@/assets/testimonial3.jpg";
 import testimonial4 from "@/assets/testimonial4.jpg";
 import testimonial5 from "@/assets/testimonial5.jpg";
 import testimonial6 from "@/assets/testimonial6.jpeg";
+import testimonial7 from "@/assets/testimonial7.jpeg";
 
 const testimonials = [
   {
@@ -37,24 +38,38 @@ const testimonials = [
   },
   {
     name: "Nirmal Jayprakash (General Manager - Sales Nippon Motor Corporation (P) Ltd)",
-    text: "I approached Smitha looking for a practical way to lose weight, and I couldn’t be happier with the results. In just 2 months, I lost 6.3 kg with a simple plan built around home-cooked food. No gym memberships, no extreme routines, no starving. Just real meals that fit my daily life.The changes went beyond the scale. I dropped from overweight to normal BMI, lost 9 cm off my waist, and felt my energy come back. My uric acid came down from 8.4 to 6.9, and my *fasting insulin improved dramatically from 25.3 to 7.6.Most importantly, it was sustainable. I never felt deprived, and for the first time, eating healthy felt easy.I highly recommend Smitha Menon to anyone who wants real, lasting results without the gimmicks. She changed how I eat, and how I feel.",
+    text: "I approached Smitha looking for a practical way to lose weight, and I couldn’t be happier with the results. In just 2 months, I lost 6.3 kg with a simple plan built around home-cooked food. No gym memberships, no extreme routines, no starving. Just real meals that fit my daily life.The changes went beyond the scale. I dropped from overweight to normal BMI, lost 9 cm off my waist, and felt my energy come back. My uric acid came down from 8.4 to 6.9, and my fasting insulin improved from 25.3 to 7.6.Most importantly, it was sustainable. I never felt deprived, and for the first time, eating healthy felt easy.I highly recommend Smitha Menon to anyone who wants real, lasting results without the gimmicks. She changed how I eat, and how I feel.",
     image: testimonial6,
   },
+  {
+    name: "Radhika Unnikrishnan, a Higher Secondary School Teacher at Trivandrum.",
+    text: "I was in a habit of skipping my daily breakfast and after coming from school in the evenings I used to eat much to satisfy my hunger cravings of the whole day (mostly rice). I did not eat much of vegetables or fruits in my meals. I was very fond of drinking milk beverages like Horlicks, Boost, Milk Shakes etc.. This was my food habits for the last 4 decades. After the age of 45, I started noticing that my body weight shooting rapidly and I was truly concerned with it. One of my closest friends suggested that I may take a consultation from Smitha at Ernakulam and I did so.  After analysing my BMI etc Smitha worked out a 4 week diet plan for me that was easy to follow. She encouraged me to follow the diet, gave suggestions and consistently monitored my plates daily. The best thing of the 4 weeks session was that, I loved eating vegetables fruits ,etc.I noticed the change on my skin(more glow), I started drinking more water, and stopped over eating . My weight went down by 2 kgs in 4 weeks.",
+    image: testimonial7,
+  },
 ];
+
 const Testimonials = () => {
   const [current, setCurrent] = useState(0);
   const [direction, setDirection] = useState(1);
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setDirection(1);
-      setCurrent((prev) => (prev + 1) % testimonials.length);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, []);
+  const currentTestimonial = testimonials[current];
+
+  // ❌ AUTO SWIPE REMOVED (intentionally)
+
+  const handleNext = () => {
+    if (current === testimonials.length - 1) return;
+    setDirection(1);
+    setCurrent((prev) => prev + 1);
+  };
+
+  const handlePrev = () => {
+    if (current === 0) return;
+    setDirection(-1);
+    setCurrent((prev) => prev - 1);
+  };
 
   const slideVariants = {
-    enter: (direction: number) => ({
+    enter: (direction) => ({
       x: direction > 0 ? 100 : -100,
       opacity: 0,
     }),
@@ -63,23 +78,11 @@ const Testimonials = () => {
       x: 0,
       opacity: 1,
     },
-    exit: (direction: number) => ({
+    exit: (direction) => ({
       zIndex: 0,
       x: direction < 0 ? 100 : -100,
       opacity: 0,
     }),
-  };
-
-  const currentTestimonial = testimonials[current];
-
-  const handleNext = () => {
-    setDirection(1);
-    setCurrent((prev) => (prev + 1) % testimonials.length);
-  };
-
-  const handlePrev = () => {
-    setDirection(-1);
-    setCurrent((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   };
 
   return (
@@ -104,7 +107,7 @@ const Testimonials = () => {
               }}
               className="grid md:grid-cols-[0.96fr_1.04fr] gap-8 lg:gap-10 items-center mb-10"
             >
-              {/* Picture (Left Side) */}
+              {/* LEFT IMAGE (UNCHANGED) */}
               <div className="relative mx-auto w-full max-w-[420px] rounded-[2rem] overflow-hidden bg-[linear-gradient(180deg,#f8eee7_0%,#f2dfd2_100%)] shadow-[0_30px_90px_-35px_hsl(var(--primary)/0.45)] h-[340px] md:h-[430px] lg:h-[470px]">
                 <div className="absolute inset-0 flex items-center justify-center p-4 md:p-5">
                   <img
@@ -113,27 +116,30 @@ const Testimonials = () => {
                     className="max-h-full max-w-full object-contain object-center drop-shadow-[0_12px_28px_rgba(0,0,0,0.18)]"
                   />
                 </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/18 via-transparent to-white/12 flex items-end p-6">
-                </div>
               </div>
 
-              {/* Review (Right Side) */}
+              {/* RIGHT CONTENT (UNCHANGED) */}
               <div className="bg-section-alt rounded-[2rem] p-8 md:p-10 shadow-md relative group flex flex-col justify-center border border-primary/10 min-h-[340px] md:min-h-[430px] lg:min-h-[470px]">
-                <Quote className="absolute top-6 right-6 w-12 h-12 text-primary/10 transition-colors" />
+                <Quote className="absolute top-6 right-6 w-12 h-12 text-primary/10" />
+
                 <div className="flex gap-1 mb-6">
                   {[...Array(5)].map((_, j) => (
                     <Star key={j} className="w-5 h-5 fill-gold text-gold" />
                   ))}
                 </div>
+
                 <p className="text-foreground/80 font-body text-lg md:text-[1.02rem] leading-7 md:leading-8 mb-8 italic relative z-10 flex-grow">
                   "{currentTestimonial.text}"
                 </p>
+
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold text-lg shadow-sm">
                     {currentTestimonial.name.charAt(0)}
                   </div>
                   <div>
-                    <p className="font-semibold text-foreground font-body text-lg">{currentTestimonial.name}</p>
+                    <p className="font-semibold text-foreground font-body text-lg">
+                      {currentTestimonial.name}
+                    </p>
                     <p className="text-sm text-primary">Happy Client</p>
                   </div>
                 </div>
@@ -141,9 +147,11 @@ const Testimonials = () => {
             </motion.div>
           </AnimatePresence>
 
+          {/* BUTTONS (ONLY LOGIC ADDED, STYLE UNTOUCHED) */}
           <div className="flex justify-center gap-6 mt-8">
             <motion.button
               onClick={handlePrev}
+              disabled={current === 0}
               className="w-12 h-12 rounded-full border-2 border-primary text-primary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all shadow-sm"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
@@ -151,8 +159,10 @@ const Testimonials = () => {
             >
               <ChevronLeft className="w-6 h-6 ml-[-2px]" />
             </motion.button>
+
             <motion.button
               onClick={handleNext}
+              disabled={current === testimonials.length - 1}
               className="w-12 h-12 rounded-full border-2 border-primary text-primary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all shadow-sm"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}

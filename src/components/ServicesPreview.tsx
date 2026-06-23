@@ -83,9 +83,10 @@ const ServicesPreview = () => {
 
   // ⭐ PAUSE/RESUME CAROUSEL BASED ON VIDEO STATE
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
-    if (isVideoPlaying) return;
+    if (isVideoPlaying || isHovered) return;
 
     const timer = window.setInterval(() => {
       setDirection(1);
@@ -93,7 +94,7 @@ const ServicesPreview = () => {
     }, 4000);
 
     return () => window.clearInterval(timer);
-  }, [isVideoPlaying]);
+  }, [isVideoPlaying, isHovered]);
 
   // const VISIBLE_ARTICLES = 3;
   const [visibleCount, setVisibleCount] = useState(3);
@@ -259,6 +260,8 @@ useEffect(() => {
                 {visibleArticles.map((article, index) => (
                   <motion.article
                     key={`${startIndex}-${index}`}
+                    onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}
                     className="group overflow-hidden rounded-2xl border border-border/40 bg-card shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col h-full"
                   >
                     <div className="overflow-hidden flex-shrink-0 bg-secondary/20 flex items-center justify-center p-4">
