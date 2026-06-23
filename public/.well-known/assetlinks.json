@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.wellnessz.mithahara",
+      "sha256_cert_fingerprints": [
+        "8B:96:91:AF:AE:F8:0F:03:C9:28:C8:0C:5C:C8:2B:3B:07:60:DE:E9:55:A8:48:E7:2F:F6:C3:5B:13:B3:3E:D0"
+      ]
+    }
+  }
+]
