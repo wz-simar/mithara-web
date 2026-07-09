@@ -46,7 +46,7 @@ const Header = () => {
               <Facebook className="w-3.5 h-3.5" />
             </a>
             <a
-              href="mailto:info@mithahara.com"
+              href="mailto:smitha.menon@mithahara.in"
               className="hover:text-primary transition-colors"
               aria-label="Email"
             >

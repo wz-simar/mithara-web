@@ -30,7 +30,7 @@ const faqs = [
   },
   { 
     q: "How can I book an appointment or get in touch?", 
-    a: "You can book directly using the consultation button on our site, call or WhatsApp us at +91 6235034862, or email us at info@mithahara.com." 
+    a: "You can book directly using the consultation button on our site, call or WhatsApp us at +91 6235034862, or email us at smitha.menon@mithahara.in." 
   },
   { 
     q: "What are your working hours?", 

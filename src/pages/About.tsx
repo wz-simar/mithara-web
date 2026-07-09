@@ -21,7 +21,7 @@ const qualifications = [
   "Post Graduate Diploma in Clinical Nutrition (Amity University, Noida)",
   "Certification in PCOS Nutrition",
   "Certified Diabetes Educator (National Diabetes Educator Program - NDEP)",
-  "Certification in Menopause Coaching",
+  "Certification in Menopause Nutrition",
   "Certification in Sports Nutrition (Medvarsity, Hyderabad)",
   "Certification in Programming for Infant and Young Child Feeding (UNICEF & Cornell University)"
 ];
@@ -102,7 +102,7 @@ const About = () => {
               
               <div className="space-y-4 text-muted-foreground font-body text-base leading-relaxed mb-6">
                 <p>
-                  Smitha Menon is a <strong className="text-foreground">Clinical, Functional & Preventive Nutritionist</strong> based in Kochi. She runs her clinic, <strong className="text-foreground">MITHAHARA</strong>, dedicated to helping individuals achieve better health through evidence-based, personalized nutrition.
+                  Smitha Menon is a <strong className="text-foreground">Clinical, Functional & Preventive Nutritionist</strong> based in Kochi. She runs her diet clinic, <strong className="text-foreground">Mithahara</strong>, dedicated to helping individuals achieve better health through evidence-based, personalized nutrition.
                 </p>
                 <p>
                   With a strong academic foundation and specialized certifications, she brings a holistic and functional approach to nutrition care — addressing root causes rather than just symptoms.

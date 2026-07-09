@@ -5,11 +5,10 @@ import AppointmentPopup from "@/components/AppointmentPopup";
 import smithaPortrait from "@/assets/smitha-menon-award.png";
 
 const items = [
-  "Dealing with PCOS or hormonal imbalances",
-  "Looking to manage diabetes or cholesterol levels",
-  "Targeting sustainable weight management",
-  "Seeking solutions for bloating, acidity, or gut health",
-  "Preparing for a healthy pregnancy or postpartum recovery",
+  "Dealing with PCOS or Hormonal imbalances",
+  "Looking to manage Diabetes, Cholesterol, Uric acid, Inflammation",
+  "Seeking solutions for bloating, acidity or gut health",
+  "Targeting weight management",
 ];
 
 const ConsultationSection = () => {
@@ -21,14 +20,14 @@ const ConsultationSection = () => {
           {/* Left Column: Text & List */}
           <AnimatedSection direction="left" className="lg:w-1/2 text-left text-primary-foreground">
             <span className="text-xs font-body font-bold uppercase tracking-[0.25em] text-gold mb-3 block">
-              Free Clarity Session
+              Free Clarity Call
             </span>
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Get a Free 1-on-1 Consultation with the Nutritionist!
+              Get a Free 5-10 Minute Discovery Call
             </h2>
             <p className="text-primary-foreground/90 font-body mb-6 leading-relaxed text-base">
-              Here's your chance to speak <strong className="text-white">directly with Smitha Menon</strong> — absolutely free.
-              No sign-ups, no commitments — just a real conversation about you, your body, and your health goals.
+              Talk directly with <strong className="text-white">Smitha Menon</strong> — absolutely free.
+              No sign-ups, no commitments. Just a real conversation about your body and health goals.
             </p>
             <p className="text-primary-foreground/80 font-body font-bold text-sm mb-4 uppercase tracking-wider">Whether you're:</p>
             
@@ -48,9 +47,12 @@ const ConsultationSection = () => {
               ))}
             </ul>
             
-            <p className="text-primary-foreground/80 font-body text-xs md:text-sm leading-relaxed mb-8 max-w-md">
-              This <strong className="text-white">10-minute personal consultation</strong> is designed to help you get clarity,
-              direction, and science-backed guidance tailored to your stage of life.
+            <p className="text-primary-foreground/80 font-body text-xs md:text-sm leading-relaxed mb-6 max-w-md">
+              This <strong className="text-white">5-10 minute discovery call</strong> is designed to help you get clarity, and direction about the programme.
+            </p>
+
+            <p className="text-primary-foreground/90 font-body text-xs md:text-sm leading-relaxed mb-8 max-w-md px-4 py-3 rounded-xl bg-white/10 border border-white/15">
+              <strong className="text-gold">Important:</strong> This is NOT a consultation. No food or diet advice will be given on this call.
             </p>
             
             <AppointmentPopup className="bg-gold text-primary-foreground font-body font-bold uppercase text-xs tracking-widest px-8 py-3.5 rounded-full hover:bg-gold/95 hover:shadow-lg transition-all duration-300">

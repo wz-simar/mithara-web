@@ -53,7 +53,7 @@ const Footer = () => {
                 <span>+91 6235034862</span>
               </a>
               <a 
-                href="mailto:info@mithahara.com" 
+                href="mailto:smitha.menon@mithahara.in" 
                 className="flex items-center gap-3 hover:text-gold transition-colors cursor-pointer"
               >
                 <Mail className="w-4 h-4 text-gold flex-shrink-0" />

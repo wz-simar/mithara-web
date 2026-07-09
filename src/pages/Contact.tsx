@@ -25,8 +25,8 @@ const contactInfo = [
   { 
     icon: Mail, 
     label: "Email", 
-    value: "info@mithahara.com", 
-    href: "mailto:info@mithahara.com" 
+    value: "smitha.menon@mithahara.in", 
+    href: "mailto:smitha.menon@mithahara.in" 
   },
   { 
     icon: MapPin, 
