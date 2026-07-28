@@ -47,7 +47,7 @@ const Terms = () => {
 
               <div>
                 <h3 className="text-lg font-heading font-semibold text-foreground mb-1">1.1. App</h3>
-                <p>means the Android and iOS mobile application, including updates, patches, upgrades, plug-ins, and any related software, interface, or functionality provided by us.</p>
+                <p>means the Mithahara Android and iOS mobile application (package / bundle identifier <strong className="text-foreground">com.wellnessz.mithahara</strong>), including updates, patches, upgrades, plug-ins, and any related software, interface, or functionality provided by us.</p>
               </div>
 
               <div>
@@ -480,7 +480,23 @@ const Terms = () => {
 
               {/* 19. CONTACT AND NOTICES */}
               <h2 className="text-xl md:text-2xl font-heading font-bold text-foreground pt-6 md:pt-8 border-t border-border/50 mb-2">19. CONTACT AND NOTICES</h2>
-              <p>All notices, complaints, support requests, legal communications, privacy concerns, refund requests, and service-related grievances shall be sent through the official contact details disclosed on the website or app.</p>
+              <p>All notices, complaints, support requests, legal communications, privacy concerns, refund requests, and service-related grievances shall be sent through the official Mithahara contact details below, or those disclosed on the website or app.</p>
+              <div className="mt-4 rounded-2xl border border-border/50 bg-secondary/30 p-5 space-y-2 text-sm">
+                <p><strong className="text-foreground">Brand:</strong> Mithahara Nutrition & Wellness</p>
+                <p><strong className="text-foreground">Nutritionist:</strong> Smitha Menon</p>
+                <p><strong className="text-foreground">Email:</strong>{" "}
+                  <a href="mailto:smitha.menon@mithahara.in" className="text-primary hover:underline">smitha.menon@mithahara.in</a>
+                </p>
+                <p><strong className="text-foreground">Phone / WhatsApp:</strong>{" "}
+                  <a href="tel:+916235034862" className="text-primary hover:underline">+91 6235034862</a>
+                </p>
+                <p><strong className="text-foreground">Clinic:</strong> G 182, (1st Floor) 3rd Cross Road, Panampilli Nagar, Kochi 682036</p>
+                <p><strong className="text-foreground">App:</strong> Mithahara on{" "}
+                  <a href="https://play.google.com/store/apps/details?id=com.wellnessz.mithahara&hl=en_IN" target="_blank" rel="noreferrer" className="text-primary hover:underline">Google Play</a>
+                  {" "}and{" "}
+                  <a href="https://apps.apple.com/app/mithahara/id6769747043" target="_blank" rel="noreferrer" className="text-primary hover:underline">App Store</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
