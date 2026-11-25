@@ -5,6 +5,9 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import PageHero from "@/components/PageHero";
 import AnimatedSection from "@/components/AnimatedSection";
 import servicesHero from "@/assets/services-hero.jpg";
+import wellnessGroup from "@/assets/wellness-group.jpg";
+import wellnessHeight from "@/assets/wellness-height.jpg";
+import wellnessAssessment from "@/assets/wellness-assessment.jpg";
 import AppointmentPopup from "@/components/AppointmentPopup";
 import { 
   Scale, 
@@ -115,6 +118,21 @@ const onlineSteps = [
     duration: "Program completion",
     desc: "Once your target is achieved, you receive a comprehensive progress report and a long-term maintenance plan to help you sustain results independently."
   }
+];
+
+const wellnessPhotos = [
+  {
+    src: wellnessGroup,
+    alt: "Smitha Menon with a group during a workplace wellness session",
+  },
+  {
+    src: wellnessHeight,
+    alt: "Height being measured during a wellness assessment",
+  },
+  {
+    src: wellnessAssessment,
+    alt: "A physical assessment during a corporate wellness session",
+  },
 ];
 
 const ServicesPage = () => {
@@ -290,48 +308,67 @@ const ServicesPage = () => {
             </div>
           </AnimatedSection>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            
-            {/* Corporate & School Wellness */}
-            <AnimatedSection direction="left">
-              <div className="bg-card rounded-3xl p-8 border border-border/40 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col text-left">
-                <div className="w-11 h-11 rounded-xl bg-gold/10 flex items-center justify-center text-gold mb-6">
-                  <Users className="w-5.5 h-5.5" />
+          <div className="max-w-6xl mx-auto space-y-8">
+            <AnimatedSection>
+              <div className="bg-card rounded-3xl p-6 md:p-10 border border-border/40 shadow-sm text-left">
+                <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-8">
+                  <div className="max-w-2xl">
+                    <div className="w-11 h-11 rounded-xl bg-gold/10 flex items-center justify-center text-gold mb-6">
+                      <Users className="w-5.5 h-5.5" />
+                    </div>
+                    <span className="text-[10px] font-body font-bold uppercase tracking-wider text-gold mb-2 block">Beyond Consultations</span>
+                    <h3 className="font-heading font-bold text-foreground text-2xl md:text-3xl mb-4">Corporate & School Wellness Programs</h3>
+                    <p className="text-muted-foreground font-body text-sm md:text-base leading-relaxed">
+                      Customized nutrition workshops designed to improve student health and company employee productivity through practical, accessible nutrition education.
+                    </p>
+                  </div>
+                  <div className="bg-secondary/40 border border-border/40 rounded-2xl p-4 md:max-w-xs md:shrink-0">
+                    <h4 className="font-heading font-bold text-xs text-primary uppercase tracking-wider mb-1">Target Outcomes</h4>
+                    <p className="font-body text-xs leading-relaxed text-muted-foreground">
+                      Healthier individuals &rarr; improved focus, reduced sick days, and an organizational culture of wellness.
+                    </p>
+                  </div>
                 </div>
-                <span className="text-[10px] font-body font-bold uppercase tracking-wider text-gold mb-2 block">Beyond Consultations</span>
-                <h3 className="font-heading font-bold text-foreground text-xl mb-4">Corporate & School Wellness Programs</h3>
-                <p className="text-muted-foreground font-body text-sm leading-relaxed mb-6 flex-grow">
-                  Customized nutrition workshops designed to improve student health and company employee productivity through practical, accessible nutrition education.
-                </p>
-                <div className="bg-secondary/40 border border-border/40 rounded-2xl p-4 mt-auto">
-                  <h4 className="font-heading font-bold text-xs text-primary uppercase tracking-wider mb-1">Target Outcomes</h4>
-                  <p className="font-body text-xs leading-relaxed text-muted-foreground">
-                    Healthier individuals &rarr; improved focus, reduced sick days, and an organizational culture of wellness.
-                  </p>
+
+                <div className="grid grid-cols-1 items-start gap-4 sm:grid-cols-3 md:gap-5">
+                  {wellnessPhotos.map((photo) => (
+                    <figure
+                      key={photo.alt}
+                      className="overflow-hidden rounded-[1.75rem] border border-border/40 bg-[linear-gradient(180deg,#f8eee7_0%,#f3e4d8_100%)]"
+                    >
+                      <img
+                        src={photo.src}
+                        alt={photo.alt}
+                        className="h-auto w-full"
+                      />
+                    </figure>
+                  ))}
                 </div>
               </div>
             </AnimatedSection>
 
-            {/* Media & Publications */}
-            <AnimatedSection direction="right">
-              <div className="bg-card rounded-3xl p-8 border border-border/40 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col text-left">
-                <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6">
+            <AnimatedSection>
+              <div className="bg-card rounded-3xl p-8 border border-border/40 shadow-sm hover:shadow-md transition-shadow text-left md:flex md:items-start md:gap-8">
+                <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 md:mb-0 md:shrink-0">
                   <Newspaper className="w-5.5 h-5.5" />
                 </div>
-                <span className="text-[10px] font-body font-bold uppercase tracking-wider text-primary mb-2 block">Professional Writing</span>
-                <h3 className="font-heading font-bold text-foreground text-xl mb-4">Media & Publication Services</h3>
-                <p className="text-muted-foreground font-body text-sm leading-relaxed mb-6 flex-grow">
-                  Evidence-based articles, guest columns, and medical reviews written for magazines, scientific journals, newsletters, and newspapers.
-                </p>
-                <div className="bg-secondary/40 border border-border/40 rounded-2xl p-4 mt-auto">
-                  <h4 className="font-heading font-bold text-xs text-primary uppercase tracking-wider mb-1">Service Focus</h4>
-                  <p className="font-body text-xs leading-relaxed text-muted-foreground">
-                    Translating complex biochemistry and clinical dietetics into highly engaging, practical, and scientifically accurate public columns.
-                  </p>
+                <div className="md:flex md:items-start md:gap-8 md:flex-1">
+                  <div className="md:flex-1">
+                    <span className="text-[10px] font-body font-bold uppercase tracking-wider text-primary mb-2 block">Professional Writing</span>
+                    <h3 className="font-heading font-bold text-foreground text-xl mb-4">Media & Publication Services</h3>
+                    <p className="text-muted-foreground font-body text-sm leading-relaxed">
+                      Evidence-based articles, guest columns, and medical reviews written for magazines, scientific journals, newsletters, and newspapers.
+                    </p>
+                  </div>
+                  <div className="bg-secondary/40 border border-border/40 rounded-2xl p-4 mt-6 md:mt-0 md:max-w-xs md:shrink-0">
+                    <h4 className="font-heading font-bold text-xs text-primary uppercase tracking-wider mb-1">Service Focus</h4>
+                    <p className="font-body text-xs leading-relaxed text-muted-foreground">
+                      Translating complex biochemistry and clinical dietetics into highly engaging, practical, and scientifically accurate public columns.
+                    </p>
+                  </div>
                 </div>
               </div>
             </AnimatedSection>
-
           </div>
         </div>
       </section>
