@@ -9,6 +9,8 @@ import testimonial4 from "@/assets/testimonial4.jpg";
 import testimonial5 from "@/assets/testimonial5.jpg";
 import testimonial6 from "@/assets/testimonial6.jpeg";
 import testimonial7 from "@/assets/testimonial7.jpeg";
+import testimonial8 from "@/assets/testimonial8.jpg";
+import testimonial9 from "@/assets/testimonial9.jpg";
 
 const testimonials = [
   {
@@ -45,6 +47,16 @@ const testimonials = [
     name: "Radhika Unnikrishnan, a Higher Secondary School Teacher at Trivandrum.",
     text: "I was in a habit of skipping my daily breakfast and after coming from school in the evenings I used to eat much to satisfy my hunger cravings of the whole day (mostly rice). I did not eat much of vegetables or fruits in my meals. I was very fond of drinking milk beverages like Horlicks, Boost, Milk Shakes etc.. This was my food habits for the last 4 decades. After the age of 45, I started noticing that my body weight shooting rapidly and I was truly concerned with it. One of my closest friends suggested that I may take a consultation from Smitha at Ernakulam and I did so.  After analysing my BMI etc Smitha worked out a 4 week diet plan for me that was easy to follow. She encouraged me to follow the diet, gave suggestions and consistently monitored my plates daily. The best thing of the 4 weeks session was that, I loved eating vegetables fruits ,etc.I noticed the change on my skin(more glow), I started drinking more water, and stopped over eating . My weight went down by 2 kgs in 4 weeks.",
     image: testimonial7,
+  },
+  {
+    name: "Dixon James",
+    text: "Smitha was really helpful ; we got my weight down by 10 kg without any medications . She gave a diet plan that was easy for me follow which had only minor changes from which what I usually had . Also the recipes that she recommended are worth continuing. The continues follow up and attention to minor details from her side made the journey much more interesting over a span of 6 months.",
+    image: testimonial8,
+  },
+  {
+    name: "Aishwarya Jayakumar",
+    text: "From 75.05 kg to 68.8 kg—a total loss of 6.25 kg in just 2 months!\n\nA huge thank you to Smitha aunty. What makes this program so effective is that you don't have to eliminate your favorite foods. Instead, it teaches you proper portion control while incorporating a rich variety of fruits, nuts, vegetables and proteins. She ensure we are within our BMI with proper exercise and food control.\n\nShe provides incredible support. The best part, she customizes diet plan every single week based on weight updates and personal food preferences.\n\nIf you are finding it difficult to lose weight and want a healthy lifestyle that actually works, I highly recommend Mithahara.\n\nGo for it! It truly works!!",
+    image: testimonial9,
   },
 ];
 
@@ -128,7 +140,7 @@ const Testimonials = () => {
                   ))}
                 </div>
 
-                <p className="text-foreground/80 font-body text-lg md:text-[1.02rem] leading-7 md:leading-8 mb-8 italic relative z-10 flex-grow">
+                <p className="text-foreground/80 font-body text-lg md:text-[1.02rem] leading-7 md:leading-8 mb-8 italic relative z-10 flex-grow whitespace-pre-line">
                   "{currentTestimonial.text}"
                 </p>
 
